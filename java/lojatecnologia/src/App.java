@@ -5,7 +5,7 @@ import main.Notebook;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        Celular celular1 = new Celular(null, null, null, null, null, null, null, null, null, null, null, null, null, null, 0);
+        Celular celular1 = new Celular("Xiaomi 14 Ultra", "Xiaomi", 8699.00, "16GB", "1T", "Qualcomm Snapdragon 8 Gen 3", null, null, "Android 14 com interface MIUI 14", 6.73, 224, false, "5300mAh.\nCarregamento rápido de 120W. \nCarregamento sem fio de 50W", "AMOLED LTPO", 0);
         Pc pc1 = new Pc(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
         Notebook notebook1 = new Notebook(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
 
