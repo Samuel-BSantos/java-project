@@ -7,7 +7,7 @@ public class App {
 
         Celular celular1 = new Celular("Xiaomi 14 Ultra", "Xiaomi", 8699.00, "16GB", "1T", "Qualcomm Snapdragon 8 Gen 3", null, null, "Android 14 com interface MIUI 14", 6.73, 224, false, "5300mAh.\nCarregamento rápido de 120W. \nCarregamento sem fio de 50W", "AMOLED LTPO", 0);
         Pc pc1 = new Pc("Highflyer", "Peças De Várias Marcas", 22599.96, "32GB DDR5", "1T", "Intel i7-14700Kd", "MSI MAG Z790 TOMAHAWK", null, "Windows 11", null, null, false, "WATER COOLER", null, "FONTE 1200W 80 PLUS GOLD");
-        Notebook notebook1 = new Notebook(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+        Notebook notebook1 = new Notebook("Predator Helios Neo", "Acer", 8679, "16GB DDR5", "1T", "Intel® Core™ i7-13650HX", null, null, "Windows 11 Home", null, 2600, false, "5850 mAh", "165 Hz", null);
 
         System.out.println("====CELULAR====" + "\n" + "Nome: " + celular1.getNome() + "\n" + "Marca: " + celular1.getMarca() + "\n" + "Preco: R$" + celular1.getPreco() + "\n" + "Mémoria Ram: " + celular1.getMemoriaRam() + "\n" + "Armazenamento: " + celular1.getArmazenamento() + "\n" + "Cpu: " + celular1.getCPU() + "\n" + "Placa Mãe: " + celular1.getPlacaMae() + "\n" + "Conectores: " + celular1.getConectores() + "\n" + "OS: " + celular1.getSistemaOperacional() + "\n" + "Tamanho: " + celular1.getTamanho() + " Cm" + "\n" + "Peso: " + celular1.getPeso() + "Kg" + "\n" + "Segunda mão: " + celular1.getSegundaMao() + "\n" + "Bateria: " + celular1.getBateria() + "\n" + "Tela: " + celular1.getTela() + "\n" + "QTD de câmeras: " + celular1.getQtd_Cameras() + "\n" + "===============" + "\n");
 
