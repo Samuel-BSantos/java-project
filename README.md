@@ -1,4 +1,4 @@
 integrantes:
-Samuel Benjamim
-Idinaldo Oliveira
+Samuel Benjamim,
+Idinaldo Oliveira,
 Paulo Henrique
