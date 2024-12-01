@@ -3,14 +3,14 @@ public class Celular extends Produto{
 
     private String Bateria;
     private String Tela;
-    private int Qtd_Cameras;
+    private camera cam;
 
-    public Celular(String Nome, String Marca, Float Preco, String MemoriaRam, String Armazenamento, String CPU, String PlacaMae, String Conectores, String SistemaOperacional, Float Tamanho, Float Peso, Boolean SegundaMao, String Bateria, String Tela, int Qtd_Cameras){
+    public Celular(String Nome, String Marca, Float Preco, String MemoriaRam, String Armazenamento, String CPU, String PlacaMae, String Conectores, String SistemaOperacional, Float Tamanho, Float Peso, Boolean SegundaMao, String Bateria, String Tela, camera cam){
         super(Nome,Marca,Preco,MemoriaRam,Armazenamento,CPU,PlacaMae,Conectores,SistemaOperacional,Tamanho,Peso,SegundaMao);
         
         this.Bateria = Bateria;
         this.Tela = Tela;
-        this.Qtd_Cameras = Qtd_Cameras;
+        this.cam = cam;
     }
 
     public String getBateria()
@@ -33,13 +33,17 @@ public class Celular extends Produto{
         this.Tela = Tela;
     }
 
-    public int getQtd_Cameras()
+    public camera getCam()
     {
-        return this.Qtd_Cameras;
+        return this.cam;
     }
 
-    public void setQtd_Cameras(int Qtd_Cameras)
+    public void setCam(camera cam)
     {
-        this.Qtd_Cameras = Qtd_Cameras;
+        this.cam = cam;
+    }
+
+    public String imprimir(){
+        return "\n ====CELULAR==== \n Nome: " + getNome() + "\n Marca: " + getMarca() + "\n Armazenamento: " + getArmazenamento() + "\n Câmera: " + cam.imprimir() + "\n ===============";
     }
 }

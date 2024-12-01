@@ -37,5 +37,7 @@ public class Pc extends Produto{
         Fonte_Energia = fonte_Energia;
     }
 
-    
+    public String imprimir(){
+        return "\n ====COMPUTADOR==== \n Nome: " + getNome() + "\n Marca: " + getMarca() + "\n Armazenamento: " + getArmazenamento() + "\n Memória Ram: " + getMemoriaRam() +"\n ==================";
+    }
 }

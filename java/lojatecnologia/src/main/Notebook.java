@@ -38,5 +38,7 @@ public class Notebook extends Produto{
         Tipo_Resfriamento = tipo_Resfriamento;
     }
 
-    
+    public String imprimir(){
+        return "\n ====NOTEBOOK==== \n Nome: " + getNome() + "\n Marca: " + getMarca() + "\n Armazenamento: " + getArmazenamento() + "\n Memória Ram: " + getMemoriaRam() +"\n ================";
+    }
 }
