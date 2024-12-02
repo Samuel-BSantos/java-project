@@ -4,13 +4,15 @@ public class Pc extends Produto{
     private String Tipo_Resfriamento;
     private String Case;
     private String Fonte_Energia;
+    private Mouse mouse;
     
-    public Pc(String Nome, String Marca, Float Preco, String MemoriaRam, String Armazenamento, String CPU, String PlacaMae, String Conectores, String SistemaOperacional, Float Tamanho, Float Peso,Boolean SegundaMao, String tipo_Resfriamento, String case1, String fonte_Energia) {
+    public Pc(String Nome, String Marca, Float Preco, String MemoriaRam, String Armazenamento, String CPU, String PlacaMae, String Conectores, String SistemaOperacional, Float Tamanho, Float Peso,Boolean SegundaMao, String tipo_Resfriamento, String case1, String fonte_Energia, Mouse mouse) {
         super(Nome, Marca, Preco, MemoriaRam, Armazenamento, CPU, PlacaMae, Conectores, SistemaOperacional, Tamanho,Peso, SegundaMao);
 
         this.Tipo_Resfriamento = tipo_Resfriamento;
         this.Case = case1;
         this.Fonte_Energia = fonte_Energia;
+        this.mouse = mouse;
     }
 
     public String getTipo_Resfriamento() {
@@ -37,7 +39,15 @@ public class Pc extends Produto{
         Fonte_Energia = fonte_Energia;
     }
 
+    public Mouse getMouse() {
+        return mouse;
+    }
+
+    public void setMouse(Mouse mouse) {
+        this.mouse = mouse;
+    }
+
     public String imprimir(){
-        return "\n ====COMPUTADOR==== \n Nome: " + getNome() + "\n Marca: " + getMarca() + "\n Armazenamento: " + getArmazenamento() + "\n Memória Ram: " + getMemoriaRam() +"\n ==================";
+        return "\n ====COMPUTADOR==== \n Nome: " + getNome() + "\n Marca: " + getMarca() + "\n Armazenamento: " + getArmazenamento() + "\n Memória Ram: " + getMemoriaRam() + "\n Mouse" + mouse.imprimir() + "\n ==================";
     }
 }

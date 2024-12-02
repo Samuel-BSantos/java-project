@@ -150,5 +150,4 @@ public abstract class Produto
     {
         this.SegundaMao = SegundaMao;
     }
-
 }
