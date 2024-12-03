@@ -1,5 +1,16 @@
 package main;
 
+/*
+
+    A classe "Mouse" é associada à duas outras classes ("Notebook", "PC"), com as quais têm uma relação de agregação. Por quê?
+    Nós sabemos que todo (ou a gigantesca maioria) notebook ten um touchpad que dispensa o uso de um mouse.
+    Enquanto os PCs são utilizados para processamento de dados, host de plataformas web, etc.
+    Sendo assim, o uso de mouse nesses dispositivos eletrônicos é dispensável nos mais variaáos casos.
+
+    Faz-se dessa classe uma agregação, já que existem tanto Noteboooks, quanto PCs sem mouses.
+
+*/
+
 public class Mouse {
     private String DPI;
     private String QTDbotoes;

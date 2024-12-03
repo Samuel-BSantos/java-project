@@ -1,4 +1,12 @@
 package main;
+
+/*
+    
+    Prdouto, nossa classe mãe, descreva informações emcomuns todo e qualquer item que será vendido na nossa plataforma e,
+    consequementemente, representa as três classes filhas (Notebook, PC e celular)
+
+*/
+
 public abstract class Produto
 {
     private String Nome;

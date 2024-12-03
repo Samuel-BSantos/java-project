@@ -1,4 +1,14 @@
 package main;
+
+/*
+    A classe produto é a classe mãe de três outras classes (Notebook, PC e Celular). Por quê?
+    Porque esses produtos devem herdar diversos atributos em comum, por exemplo: Nome, Marca e Sistema_Operacional.
+    Entendemos que a  é uma entidade fundamental e deve ser usada como classe mãe.
+
+    Faz-se dessa classe uma classe "filha", pois, ela é um produto que será comercializado no software de nossa ideia.
+
+*/
+
 public class Celular extends Produto{
 
     private String Bateria;
